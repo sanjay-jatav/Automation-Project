@@ -1,0 +1,102 @@
+Test Scenario ID,Test Scenario ,TC_ID, Test Case,Prequisites,Test Steps,Test Data,Expected Result,Actual Result,Priority,Result,Comments
+TS_001,Verify the Register Account functionality,TC_001,Validate that the first name contains a valid name.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the first name input field.
+4. Click on Register button.
+5. Verify that test data is accept.","""sanjay""",The first name input field should accept valid test data.,The first name input field accepts valid test data,P0,PASS,
+,,TC_002,Validate that the first name does not contain a valid full name.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the first name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""sanjay jatav""","The first name field should only accept a single name (e.g., sanjay) if the user enters the full name should reject the input or display an error message.",The first name input field accepts the full name without any validation or error message.,P1,FAIL,"The first name should only accept a single name(e.g., sanjay) and should not allow spaces or full names"
+,,TC_003,Validate that the first name does not contain a valid name with a special character.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the first name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""sanjay#""","The first name field should only accept alphabet characters (e.g., sanjay) if the user enters the name with a special character should reject the input or display an error message.",The first name input field accepts the name with special characters without any validation or error message.,P1,FAIL,"The first name should only accept alphabetical names (e.g., sanjay) it accepts alphabetical ones with special characters."
+,,TC_004,Validate that the first name does not accept only spaces.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the first name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""---------""
+- like space",The first name input field should not accept spaces and an error message should be displayed.,The first name input field accepts spaces.,P0,FAIL,
+,,TC_005,Validate that the last name contains a valid last name.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the last name input field.
+4. Click on Register button.
+5. Verify that test data is accept.","""jatav""",The last name input field should accept valid test data.,The last name input field accepts valid test data,P0,PASS,
+,,TC_006,Validate the last name input field does not accept Full Name.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register"," 1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the last name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""sanjay jatav""","The last name should only accept a single name (e.g., jatav) if the user enters the full name should reject the input or display an error message.",The first name input field accepts the full name without any validation or error message.,P1,FAIL,
+,,TC_007,Validate that the first name does not contain a valid name with a special character.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register"," 1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the last name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""jatav#""","The last name field should only accept alphabet characters (e.g., jatav) if the user enters the last name with a special character should reject the input or display an error message.", The first name input field accepts the name with special characters without any validation or error message.,P1,FAIL,
+,,TC_008,Validate that the last name does not accept only spaces.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter data from test data in the first name input field.
+4. Click on Register button.
+5. Verify that the input field display error.","""---------""
+- like space",The last name input field should not accept spaces and an error message should be displayed.,The first name input field accepts spaces.,P0,FAIL,
+,,TC_009,Validate that the calendar opens on click,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Click on the Date of Birth calendar.
+4. To verify that the calendar is open.",,A calendar popup should open,A calendar popup opens,P0,PASS,
+,,TC_010,Validate that they manually type into the input field.,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Click on the Date of Birth input field.
+4. Enter the date from the test data.
+5. To verify that the input field contains the date.",18/06/2003,The date should accepted and displayed correctly.,The date is accepted and displayed correctly.,P0,PASS,
+,,TC_011,Validate that the future date is not accepted,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Click on the Date of Birth input field.
+4. Enter the date from the test data.
+5. To verify that the input field does not accept ",22/03/2025,The date should not accepted and an error message should display,The date is accepted and an error message is not displaying,P0,FAIL,
+,,TC_012,Validate that the leap year handling,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Click on the Date of Birth input field.
+4. Enter the date from the test data.
+",29/02/2024,The date should be selected correctly.,The date is selected correctly.,P1,PASS,
+,,TC_013,Validate that the invalid dates,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Click on the Date of Birth input field.
+4. Enter the date from the test data.
+","Feb 30 yyyy
+year anyone",The invalid date should not be selectable or should correct itself,The invalid is selectable or should correct itself,P0,PASS,
+,,TC_014,Validate that the empty date field submission,"1. good internet connection
+2. search browser.
+3. url : https://practicesoftwaretesting.com/auth/register","1. Open Chrome browser.
+2. Peste URL from prerequisites in the search field.
+3. Enter the date from the test data.
+",,An error message should displayed,An error message is display,P0,PASS,
+,,TC_015,,,,,,,,,
+,,TC_016,,,,,,,,,

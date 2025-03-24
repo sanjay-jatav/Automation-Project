@@ -1,0 +1,16 @@
+{
+    "validData": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "subject": "Support",
+      "message": "This is a test message."
+    },
+    "invalidData": {
+      "firstName": "",
+      "lastName": "",
+      "email": "invalid-email",
+      "subject": "",
+      "message": ""
+    }
+  }

@@ -1,0 +1,49 @@
+{
+    "validData": {
+        "firstName": "Sanjay",
+        "lastName": "Jatav",
+        "dateOfBirth": "2003-01-01",
+        "address": "village bhorana, post raja ki mudheri",
+        "pinCode": "473551",
+        "city": "shivpuri",
+        "state": "M.P.",
+        "country": "India",
+        "mobileNumber": "7723058529",
+        "email": "sanjayjatav7723@gmail.com",
+        "password": "Sanjay#123"
+    },
+    "invalidData": {
+    "firstName": "J", 
+    "lastName": "D", 
+    "dateOfBirth": "invalid-date", 
+    "address": "", 
+    "pinCode": "invalid", 
+    "city": "", 
+    "state": "", 
+    "country": "", 
+    "mobileNumber": "123", 
+    "email": "invalid-email", 
+    "password": "weak" 
+  },
+    "emptyData": {
+        "firstName": "",
+        "lastName": "",
+        "dateOfBirth": "",
+        "address": "",
+        "pinCode": "",
+        "city": "",
+        "state": "",
+        "country": "",
+        "mobileNumber": "",
+        "email": "",
+        "password": ""
+    },
+
+    "passwordTestCases": {
+        "weak": "pa", 
+        "moderate": "Passwo", 
+        "strong": "Pass123", 
+        "veryStrong": "Pa@123",
+        "excellent": "P@ssw0rd!123"
+    }
+}
